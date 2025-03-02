@@ -5,7 +5,7 @@ on:
 
 jobs:
   checkout:
-    name: Deploy Ansible Playbook for Cisco IOS interfaces
+    name: checkout from Repo
     runs-on: [self-hosted, Linux, X64, champ-lab, Runner-2]
     # environment: staging again again again
     steps:
@@ -14,7 +14,7 @@ jobs:
   
   deploy:
     needs: checkout
-    name: Deploy Ansible Playbook for Cisco IOS interfaces
+    name: Deploy Ansible Playbook for Cisco IBGP config
     runs-on: [self-hosted, Linux, X64, dev, lab]
     steps:
         - name: Run Ansible Playbook
