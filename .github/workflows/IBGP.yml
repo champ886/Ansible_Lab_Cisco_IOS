@@ -6,7 +6,7 @@ on:
 jobs:
   checkout:
     name: Deploy Ansible Playbook for Cisco IOS interfaces
-    runs-on: [self-hosted, Linux, X64, dev, lab]
+    runs-on: ubuntu-latest
     # environment: staging again again again
     steps:
         - name: Checkout Repo
