@@ -15,7 +15,7 @@ jobs:
   deploy:
     needs: checkout
     name: Deploy Ansible Playbook for Cisco IBGP config
-    runs-on: [self-hosted, Linux, X64, dev, lab]
+    runs-on: [self-hosted, Linux, X64, champ-lab, Runner-2]
     steps:
         - name: Run Ansible Playbook
           env:
